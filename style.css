@@ -1,5 +1,112 @@
-.topnav {
+:root {
+    --accent-color: #3882f6;
+    --light-text-color: #f9faf8;
+    --lightbackground-color: #f9f9f9;
+    --dark-background-color: #1f2937;
+    --dark-text-color: #1f2937;
+    --quote-background-color: #e5e7eb;
+    --quote-text-color: #1f2937;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pagewidth{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.text-hero {
+    color: var(--light-text-color);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.text-hero-secondary {
+    font-size: 18px;
+    color: var(--light-text-color);
+}
+
+.text-hero-logo {
+    font-size: 24px;
+    color: var(--light-text-color);
+}
+
+.text-information-head {
+    font-size: 36px;
+    color: var(--quote-text-color);
+    font-weight: 900;
+}
+
+.text-quote {
+    font-size: 36px;
+    color: var(--quote-text-color);
+    font-weight: 300;
+}
+
+.button-main {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    border: none;
+}
+
+.section-quote {
+    background-color: var(--quote-background-color);
+}
+
+.hero,
+.footer {
+    background-color: var(--dark-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--dark-background-color);}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 48px 24px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+}
+.header-links a {
+    font-size: 18px;
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+.image-hero {
+    width: 300px;
+    height: auto;
+    background-color: var(--quote-background-color);
 }
