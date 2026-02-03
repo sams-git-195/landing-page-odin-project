@@ -46,10 +46,17 @@ body {
 }
 
 .text-quote {
-    font-size: 36px;
+    font-size: 24px;
     color: var(--quote-text-color);
     font-weight: 300;
 }
+
+.quotesign {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--quote-text-color);
+}
+
 
 .text-information-row-inner {
     color: var(--quote-text-color);
@@ -63,10 +70,16 @@ body {
     border-radius: 8px;
     font-weight: 700;
     border: none;
+    border: 2px solid var(--light-text-color);
 }
 
 .section-quote {
     background-color: var(--quote-background-color);
+    padding: 92px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
 }
 
 .hero,
@@ -76,7 +89,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.hero{
     padding: 92px 48px;
+}
+.footer{
+    padding: 24px;
 }
 
 .section-information {
@@ -161,4 +180,15 @@ body {
     color: var(--quote-text-color);
     flex-grow: 1;
     align-items: center;
+}
+
+#calltoaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 72px;
+    background-color: var(--accent-color);
+    border-radius: 12px;
+    gap: 24px;
 }
